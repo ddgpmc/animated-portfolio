@@ -31,7 +31,7 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -47,16 +47,36 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
+          <motion.h2 variants={textVariants}>AWU FOUNDATION</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+            ALWAYS WITH US <span style={{ color: "#fcca46" }}>FOUNDATION</span>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            {/* YouTube Videos */}
+            <div className="youtube-video">
+              <iframe
+                width="100%" // Adjust the width as needed
+                height="150" // Adjust the height as needed
+                src="https://youtu.be/UNdScP7mIfE"
+                title="YouTube video player 1"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="youtube-video">
+              <iframe
+                width="100%" // Adjust the width as needed
+                height="150" // Adjust the height as needed
+                src="https://youtu.be/UNdScP7mIfE"
+                title="YouTube video player 2"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </motion.div>
+
           <motion.img
             variants={textVariants}
             animate="scrollButton"
@@ -71,10 +91,10 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Writer Content Creator Influencer
+        AWU FOUNDATION
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/hero1.png" alt="" />
       </div>
     </div>
   );
